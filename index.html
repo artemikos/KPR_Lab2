@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lesson 4</title>
-    <meta charset="UTF-8"/>
-
-    <script src="src/index.js" type="module"></script>
+    <title>MiniMaple</title>
+    <style>
+        body { font-family: Arial; margin: 100px; }
+        .container { border: 1px solid #ccc; padding: 20px; width: 300px; }
+        input { width: 100%; margin: 5px 0; padding: 5px; }
+        button { padding: 10px; margin: 10px 0; }
+        #result { margin-top: 10px; font-weight: bold; }
+    </style>
 </head>
-
 <body>
-<h1>Implement the symbolic diff here</h1>
-<div id="container">
+    <div class="container">
+        <h3>MiniMaple</h3>
+        <input type="text" id="expr" placeholder="Введите выражение">
+        <input type="text" id="var" placeholder="Введите переменную для рассчета" maxlength="1">
+        <button onclick="calculate()">Рассчитать производную</button>
+        <div id="result">Здесь будет результат</div>
+    </div>
 
-</div>
-<div>
-    <button id="demoButton">
-        Add something
-    </button>
-</div>
+    <script type='module' src="miniMaple.js"></script>
 </body>
 </html>
